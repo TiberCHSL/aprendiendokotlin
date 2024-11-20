@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">aprendiendo</string>
-    <string name="male">Corneta</string>
-    <string name="female">Choro</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
 </resources>

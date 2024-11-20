@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="16dp"
+    android:paddingVertical="32dp"
+    android:background="@color/background"
     tools:context=".IMCCalculator.IMCActivity">
 
     <androidx.cardview.widget.CardView
@@ -14,9 +15,9 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/black"
+        app:cardBackgroundColor="@color/card_component"
         app:cardCornerRadius="16dp"
-        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@id/vistaMujer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,8 +29,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/ic_pene"
                 app:tint="@color/white" />
@@ -49,8 +50,7 @@
         android:id="@+id/vistaMujer"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/teal_200"
+        app:cardBackgroundColor="@color/card_component"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/vistaHombre"
@@ -65,8 +65,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/ic_vagina"
                 app:tint="@color/white" />
 
