@@ -81,7 +81,8 @@ class IMCActivity : AppCompatActivity() {
     }
 
     private fun setWeight() {
-        tvWeight.text = currentWeight.toString()
+        var newWeight: String = currentWeight.toString()
+        tvWeight.text = "$newWeight KG"
     }
 
     private fun initComponents() {
