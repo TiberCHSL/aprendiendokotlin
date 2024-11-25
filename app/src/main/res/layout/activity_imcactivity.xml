@@ -249,6 +249,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
+
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="0dp"
@@ -257,10 +258,10 @@
         android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:tint="@color/black" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

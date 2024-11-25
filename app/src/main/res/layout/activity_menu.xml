@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="32dp"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".MenuActivity">
 
-
-    <Button
-        android:id="@+id/botonsaludoql"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Saludo qlo" />
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/card_component"
+        app:cardCornerRadius="16dp">
 
-    <Button
-        android:id="@+id/btnIMCapp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="IMC app"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        />
+            <Button
+                android:id="@+id/botonsaludoql"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saludo qlo"
+                />
 
+            <Button
+                android:id="@+id/btnIMCapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMC app"
 
-</LinearLayout>
+                />
+
+            <Button
+                android:id="@+id/btnTODO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TODO App"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

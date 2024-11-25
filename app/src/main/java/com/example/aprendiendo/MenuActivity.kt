@@ -11,21 +11,27 @@ import com.example.aprendiendo.IMCCalculator.IMCActivity
 import com.example.aprendiendo.firstapp.FirstAppActivity
 
 class MenuActivity : AppCompatActivity() {
+    private lateinit var botonsaludoql: Button
+    private lateinit var btnIMCapp: Button
+    private lateinit var btnTODO: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
-        val botonsaludoql = findViewById<Button>(R.id.botonsaludoql)
-        val btnIMCapp= findViewById<Button>(R.id.btnIMCapp)
-
-        botonsaludoql.setOnClickListener { irasaludoql() }
-        btnIMCapp.setOnClickListener{ iraimcql() }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        initComponents()
+        initListeners()
+    }
+
+    private fun initListeners() {
+        botonsaludoql.setOnClickListener { irasaludoql() }
+        btnIMCapp.setOnClickListener { iraimcql() }
     }
 
     private fun iraimcql() {
@@ -34,8 +40,13 @@ class MenuActivity : AppCompatActivity() {
     }
 
     fun irasaludoql() {
-        val intent = Intent(this,FirstAppActivity::class.java)
+        val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
+    }
+    fun initComponents() {
+        botonsaludoql = findViewById<Button>(R.id.botonsaludoql)
+        btnIMCapp = findViewById<Button>(R.id.btnIMCapp)
+        btnTODO = findViewById<Button>(R.id.btnTODO)
     }
 }
 
