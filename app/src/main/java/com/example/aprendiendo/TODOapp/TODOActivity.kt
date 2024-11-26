@@ -10,6 +10,10 @@ import com.example.aprendiendo.R
 
 class TODOActivity : AppCompatActivity() {
     private lateinit var rvCategories: RecyclerView
+    private lateinit var categoriesAdapter: CategoryAdapter
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
