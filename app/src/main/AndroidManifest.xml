@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Aprendiendo"
         tools:targetApi="31">
         <activity
+            android:name=".TODOapp.TODOActivity"
+            android:theme="@style/Theme.TODOApp"
+            android:exported="false" />
+        <activity
             android:name=".IMCCalculator.ResultIMCActivity"
             android:exported="false" />
         <activity

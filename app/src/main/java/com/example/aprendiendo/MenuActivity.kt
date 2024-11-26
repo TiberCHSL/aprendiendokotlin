@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.aprendiendo.IMCCalculator.IMCActivity
+import com.example.aprendiendo.TODOapp.TODOActivity
 import com.example.aprendiendo.firstapp.FirstAppActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -32,6 +33,12 @@ class MenuActivity : AppCompatActivity() {
     private fun initListeners() {
         botonsaludoql.setOnClickListener { irasaludoql() }
         btnIMCapp.setOnClickListener { iraimcql() }
+        btnTODO.setOnClickListener { iraTODO() }
+    }
+
+    private fun iraTODO() {
+        val intent = Intent(this,TODOActivity::class.java)
+        startActivity(intent)
     }
 
     private fun iraimcql() {
@@ -44,9 +51,9 @@ class MenuActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun initComponents() {
-        botonsaludoql = findViewById<Button>(R.id.botonsaludoql)
-        btnIMCapp = findViewById<Button>(R.id.btnIMCapp)
-        btnTODO = findViewById<Button>(R.id.btnTODO)
+        botonsaludoql = findViewById(R.id.botonsaludoql)
+        btnIMCapp = findViewById(R.id.btnIMCapp)
+        btnTODO = findViewById(R.id.btnTODO)
     }
 }
 
