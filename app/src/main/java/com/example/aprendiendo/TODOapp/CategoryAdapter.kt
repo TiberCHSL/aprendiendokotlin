@@ -3,10 +3,9 @@ package com.example.aprendiendo.TODOapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.aprendiendo.R
 
-class CategoryAdapter(private val categories: List<TaskCategory>) :
+class CategoryAdapter(private val categories: List<TaskCategory>, private val onItemSelected: (Int) -> Unit) :
     RecyclerView.Adapter<CategoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
@@ -17,7 +16,7 @@ class CategoryAdapter(private val categories: List<TaskCategory>) :
     override fun getItemCount() = categories.size
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-        holder.render(categories[position])
+        holder.render(categories[position], onItemSelected)
     }
 
 }

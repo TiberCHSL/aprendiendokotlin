@@ -32,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Saludo qlo"
+                android:backgroundTint="@color/purple_700"
                 />
 
             <Button
@@ -39,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="IMC app"
+                android:backgroundTint="@color/purple_700"
 
                 />
 
@@ -47,6 +49,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TODO App"
+                android:backgroundTint="@color/purple_700"
+
                 />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
